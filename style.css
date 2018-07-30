@@ -1,0 +1,111 @@
+*{
+	cursor: default;
+}
+div{
+	margin: 100px;
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+
+/*D1*/
+
+	#d1{
+		background: red;
+		border-radius: 50%;
+		transition: all 0.7s cubic-bezier(.99,.01,0,1);
+	}
+
+	#d1:hover{
+		transform: scale(1.1);
+		/* transform: , rotate(10deg); */
+		background: blue;
+		border-radius: 0;
+	}
+
+	#d1:active{
+		transform: scale(2.1);
+		/* transform: , rotate(10deg); */
+		background: green;
+		/* border-radius: 0; */
+	}
+
+/* D2 */
+
+	#d2{
+		background: green;		
+		/* border-radius: 50%; */	
+	}
+
+	#d2:hover{
+		animation: Pls 0.5s;
+	}
+
+	@keyframes Pls{
+		0%, 34%, 66%, 100%{
+			transform: rotate(0);
+		}
+		17%, 83%{
+			transform: rotate(2deg);
+		}
+		50%{
+			transform: rotate(5deg);
+		}
+	}
+
+/* D3 */
+
+	#d3{
+		background: blue;
+		/* border-radius: 50%; */
+		animation: Pls 0.5s paused;	
+	}
+
+	#d3:hover{
+		animation-play-state: running;
+	}
+
+/*D4*/
+	
+	#d4{
+		background: #ddd;
+		animation: Dfour 2s paused;
+		
+	}
+
+	#d4:hover{
+		animation-play-state: running;
+	}
+
+	@keyframes Dfour{
+		0%, 100%{
+			transform: rotate(0deg);
+		}
+		33%, 66%{
+			transform: rotate(10deg);
+		}
+		50%{
+			transform: rotate(30deg);
+		}
+	}
+
+/*D5*/
+
+	#d5{
+		background: red;
+		width: 300px;
+		height: 300px;
+		
+	}
+	#d5 a{
+		position: absolute;
+	}
+	#d51{
+		background: #eee;
+		filter:blur(0px);
+		transition: all 0.8s cubic-bezier(.99,.01,0,1);
+	}
+
+	#d51:hover{
+		filter:blur(3px);
+	}
