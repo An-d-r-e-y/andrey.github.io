@@ -13,7 +13,7 @@ white: #ffffff;
 	padding: 0;
 }
 
-html, body{overflow-x: hidden; background: #232323} /*black*/
+html, body{overflow-x: hidden; background: #232323; height:100%;} /*black*/
 
 header{
 	width: 100%;
@@ -51,7 +51,7 @@ header h1{
     box-shadow: 1px 2px 3px #0000009c;
 	background-size:cover;
 }
-.content-box div.p{ float: left; width: 50%;
+.content-box div.p{ float: left; width: 50%;height: 100%;
     /* margin: 2%; */ 
     font-family: Microsoft Tai Le;
 	/* padding: 9% 0; */
@@ -62,9 +62,10 @@ header h1{
     text-indent:3%;
     vertical-align: baseline;
 }.content-box div.p p{
-	padding: 7% 7%;
+    padding: 12% 13%;
     text-align: justify;
     margin-bottom: 1%;
+    font-size: 1.3em;
 }
 
 .content-box a{
