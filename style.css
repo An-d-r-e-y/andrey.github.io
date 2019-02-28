@@ -1,111 +1,90 @@
+
+/**
+
+yellow: #fcfe07;
+black: #232323;
+white: #ffffff;
+
+
+**/
+
 *{
-	cursor: default;
-}
-div{
-	margin: 100px;
-	width: 100px;
-	height: 100px;
-	float: left;
+	margin: 0;
+	padding: 0;
 }
 
-/*D1*/
+html, body{overflow-x: hidden; background: #232323} /*black*/
 
-	#d1{
-		background: red;
-		border-radius: 50%;
-		transition: all 0.7s cubic-bezier(.99,.01,0,1);
-	}
+header{
+	width: 100%;
+    background: #232323; /*black*/
+    padding: 1.4% 2% 1.4% 2%;
+    box-shadow: -1px 2px 2px #0000004f;
+}
+header img{
+	width: 95%;
+	height: 100%;
+	/* box-shadow: 2px 2px 10px #0000004f; */
+}
+header h1{
+	font-family: Nasalization;
+	color: white;
+	text-align: center;
 
-	#d1:hover{
-		transform: scale(1.1);
-		/* transform: , rotate(10deg); */
-		background: blue;
-		border-radius: 0;
-	}
+}
 
-	#d1:active{
-		transform: scale(2.1);
-		/* transform: , rotate(10deg); */
-		background: green;
-		/* border-radius: 0; */
-	}
+/************************
+*/
 
-/* D2 */
+#content-box1{background-image: url("../img/Носки 1.jpg"); }
+#content-box2{background-image: url("../img/Носки 1.jpg"); }
+#content-box3{background-image: url("../img/Носки 1.jpg"); }
+#content-box4{background-image: url("../img/Носки 1.jpg"); }
+ 
+#content-box2 div.p{float: right}
+#content-box4 div.p{float: right} 
 
-	#d2{
-		background: green;		
-		/* border-radius: 50%; */	
-	}
-
-	#d2:hover{
-		animation: Pls 0.5s;
-	}
-
-	@keyframes Pls{
-		0%, 34%, 66%, 100%{
-			transform: rotate(0);
-		}
-		17%, 83%{
-			transform: rotate(2deg);
-		}
-		50%{
-			transform: rotate(5deg);
-		}
-	}
-
-/* D3 */
-
-	#d3{
-		background: blue;
-		/* border-radius: 50%; */
-		animation: Pls 0.5s paused;	
-	}
-
-	#d3:hover{
-		animation-play-state: running;
-	}
-
-/*D4*/
+.content-box {
+	margin: 10px 2% 0 2%;
+    height: 284px;
+    text-align: center;
+    box-shadow: 1px 2px 3px #0000009c;
+	background-size:cover;
+}
+.content-box div.p{ float: left; width: 50%;
+    /* margin: 2%; */ 
+    font-family: Microsoft Tai Le;
+	/* padding: 9% 0; */
+	width: 64%;
+	height: 100%;
+	background-color: #fcfe07;
 	
-	#d4{
-		background: #ddd;
-		animation: Dfour 2s paused;
-		
-	}
+    text-indent:3%;
+    vertical-align: baseline;
+}.content-box div.p p{
+	padding: 7% 7%;
+    text-align: justify;
+    margin-bottom: 1%;
+}
 
-	#d4:hover{
-		animation-play-state: running;
-	}
+.content-box a{
+	color: #ffffff;
+    background-color: #232323;
+    padding: 3% 7%;
+    font-size: 1.3em;
+    text-decoration: none;
+    transition: background 0.5s, box-shadow 0.5s;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px 0px #000000a1;
 
-	@keyframes Dfour{
-		0%, 100%{
-			transform: rotate(0deg);
-		}
-		33%, 66%{
-			transform: rotate(10deg);
-		}
-		50%{
-			transform: rotate(30deg);
-		}
-	}
+}
+.content-box a:hover{
+	background: #565353;
+	box-shadow: -1px -1px 3px 0px #000000a1;;
+}
 
-/*D5*/
+.content-box img{width: 45%;
+    margin: 13% 0;}
 
-	#d5{
-		background: red;
-		width: 300px;
-		height: 300px;
-		
-	}
-	#d5 a{
-		position: absolute;
-	}
-	#d51{
-		background: #eee;
-		filter:blur(0px);
-		transition: all 0.8s cubic-bezier(.99,.01,0,1);
-	}
 
-	#d51:hover{
-		filter:blur(3px);
-	}
+  /* https://github.com/An-d-r-e-y/KRASAV4K1.git */
