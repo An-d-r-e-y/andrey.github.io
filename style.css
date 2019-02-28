@@ -36,10 +36,10 @@ header h1{
 /************************
 */
 
-#content-box1{background-image: url("../img/Носки 1.jpg"); }
-#content-box2{background-image: url("../img/Носки 1.jpg"); }
-#content-box3{background-image: url("../img/Носки 1.jpg"); }
-#content-box4{background-image: url("../img/Носки 1.jpg"); }
+#content-box1{background-image: url("img/Носки 1.jpg"); }
+#content-box2{background-image: url("img/Носки 1.jpg"); }
+#content-box3{background-image: url("img/Носки 1.jpg"); }
+#content-box4{background-image: url("img/Носки 1.jpg"); }
  
 #content-box2 div.p{float: right}
 #content-box4 div.p{float: right} 
